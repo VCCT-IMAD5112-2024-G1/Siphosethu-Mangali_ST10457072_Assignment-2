@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:background="@drawable/forest_night_meadow_dark_trees_road_edge_grass_hills_glade_bushes_beautiful_graceful_cloudy_sky_flat_style_cartoon_design_224200463">
 
     <Button
         android:id="@+id/HappyBtn"
