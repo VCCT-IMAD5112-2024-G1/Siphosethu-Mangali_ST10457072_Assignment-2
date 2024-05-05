@@ -10,11 +10,11 @@ class MainActivity2 : AppCompatActivity() {
 
     lateinit var image: ImageView
     lateinit var feedCountTextView: TextView
-    lateinit var playCountTextView: TextView
+    lateinit var happyCountTextView: TextView
     lateinit var cleanCountTextView: TextView
-    private var feedClickCount: Int = 0
-    private var playClickCount: Int = 0
-    private var cleanClickCount: Int = 0
+    var feedClickCount = 0
+    var happyClickCount = 0
+    var cleanClickCount = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,44 +22,29 @@ class MainActivity2 : AppCompatActivity() {
 
         image = findViewById(R.id.doggo)
 
-
         feedCountTextView = findViewById(R.id.FeedCount)
-
-        val FeedBtn = findViewById<Button>(R.id.FeedBtn)
-        FeedBtn.setOnClickListener {
-
-            image.setImageResource(R.drawable.doggo_eating)
-
-            feedClickCount++
-            feedCountTextView.text = "Feed Count: $feedClickCount"
-        }
-
-        playCountTextView = findViewById(R.id.PlayCount)
-
-
-        val PlayBtn = findViewById<Button>(R.id.PlayBtn)
-        PlayBtn.setOnClickListener {
-
-            image.setImageResource(R.drawable.puppies_clipart_10)
-
-            playClickCount++
-            playCountTextView.text = "Play Count: $playClickCount"
-        }
-
+        happyCountTextView = findViewById(R.id.HappyCount)
         cleanCountTextView = findViewById(R.id.CleanCount)
 
+        val feedBtn = findViewById<Button>(R.id.FeedBtn)
+        feedBtn.setOnClickListener {
+           image.setImageResource(R.drawable.doggo_eating)
+            feedClickCount++
+            feedCountTextView.text = "$feedClickCount"
+        }
 
-        //when the button is clicked it changes to the clean image
-        val CleanBtn = findViewById<Button>(R.id.CleanBtn)
-        CleanBtn.setOnClickListener {
+        val happyBtn = findViewById<Button>(R.id.HappyBtn)
+        happyBtn.setOnClickListener {
+            image.setImageResource(R.drawable.puppies_clipart_10)
+            happyClickCount++
+            happyCountTextView.text = "$happyClickCount"
+        }
 
-            // Change the image resource when the Clean button is clicked
-            image.setImageResource(R.drawable.dog_washing)
-
-            //counting the clicks of the dog button
+        val cleanBtn = findViewById<Button>(R.id.CleanBtn)
+        cleanBtn.setOnClickListener {
+            image.setImageResource(R.drawable.puppies_clipart_10)
             cleanClickCount++
-            cleanCountTextView.text = "Clean Count: $cleanClickCount"
-
+            cleanCountTextView.text = "$cleanClickCount"
         }
     }
 }

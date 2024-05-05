@@ -8,11 +8,11 @@
     tools:context=".MainActivity2">
 
     <Button
-        android:id="@+id/PlayBtn"
+        android:id="@+id/HappyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Play"
+        android:text="Happy"
         app:layout_constraintEnd_toStartOf="@+id/FeedBtn"
         app:layout_constraintStart_toEndOf="@+id/CleanBtn"
         app:layout_constraintTop_toBottomOf="@+id/doggo" />
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
-        android:text="Play"
+        android:text="Happy"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,7 +100,7 @@
         app:srcCompat="@drawable/fuck_hello" />
 
     <TextView
-        android:id="@+id/PlayCount"
+        android:id="@+id/HappyCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -121,7 +121,7 @@
         android:textColor="#E91E63"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PlayCount" />
+        app:layout_constraintTop_toBottomOf="@+id/HappyCount" />
 
     <TextView
         android:id="@+id/FeedCount"
