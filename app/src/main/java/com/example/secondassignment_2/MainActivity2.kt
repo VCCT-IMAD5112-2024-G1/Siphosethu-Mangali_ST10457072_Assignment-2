@@ -42,7 +42,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val cleanBtn = findViewById<Button>(R.id.CleanBtn)
         cleanBtn.setOnClickListener {
-            image.setImageResource(R.drawable.puppies_clipart_10)
+            image.setImageResource(R.drawable.dog_washing)
             cleanClickCount++
             cleanCountTextView.text = "$cleanClickCount"
         }
