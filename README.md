@@ -3,4 +3,5 @@
 3rd step: you will be taken to the home screen and clicked on the app "seccond Asignment"
 4th step: the app will open with a welcoming message, picture of a dog, and a buton that says click to get started
 5th step: three buttons will appear "fead, clean, happy" those the only way the pictures will change to their respected text
-6th step: that is all enjoy your app
+6th step: the buttons will record how times you have interacted with the dog
+7th step: that is all enjoy your app
