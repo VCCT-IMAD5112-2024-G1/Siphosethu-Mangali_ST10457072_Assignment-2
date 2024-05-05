@@ -5,3 +5,4 @@
 5th step: three buttons will appear "fead, clean, happy" those the only way the pictures will change to their respected text
 6th step: the buttons will record how times you have interacted with the dog
 7th step: that is all enjoy your app
+this is a link to a video showing the app running: https://youtu.be/dgZIhUKsaTc 
